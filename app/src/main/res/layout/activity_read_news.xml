@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.ReadNewsActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="top"
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_news_pic"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/news_img_viewholder"
+                    android:layout_height="match_parent"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        >
+                        <ImageButton
+                            android:id="@+id/btn_back"
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/ic_arrow_back"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginLeft="6dp"
+                            android:background="@color/transparent_color"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="bottom"
+                        >
+                        <TextView
+                            android:id="@+id/tv_date_news"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="News date"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/tv_title_news"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="2dp"
+                            android:text="News title"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="25sp"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:id="@+id/tv_author"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.6"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/primary_text_color"
+                    android:text="Author"
+                    />
+                <Button
+                    android:id="@+id/btn_save_news"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.4"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Save"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:background="@drawable/btn_background"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_description_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text_color"
+                android:textSize="24sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="its Description"
+                />
+            <TextView
+                android:id="@+id/tv_content_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text_color"
+                android:textSize="24sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:text="its content of the news"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

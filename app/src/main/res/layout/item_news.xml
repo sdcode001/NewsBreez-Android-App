@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:background="@android:color/white"
+    android:elevation="50dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top"
+        tools:ignore="UseCompoundDrawables">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_news"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/news_img_viewholder"
+            android:layout_height="160dp"
+            app:shapeAppearanceOverlay="@style/roundimageview"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="hello world. i am good"
+            android:maxLength="50"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="20sp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text_color"
+            android:layout_marginTop="2dp"
+            android:text="hello world. i am good"
+            android:maxLength="100"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondary_text_color"
+            android:layout_marginTop="2dp"
+            android:text="date"
+            android:textSize="14sp"
+            />
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+       android:orientation="horizontal"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="8dp"
+      >
+      <Button
+          android:id="@+id/btn_read"
+          android:layout_width="0dp"
+          android:layout_height="30dp"
+          android:layout_weight="1"
+          android:layout_marginRight="15dp"
+          android:layout_marginLeft="10dp"
+          android:text="Read"
+          android:textStyle="bold"
+          android:textColor="@color/white"
+          android:textSize="18sp"
+          android:background="@drawable/btn_background"
+          />
+      <Button
+          android:id="@+id/btn_save"
+          android:layout_width="0dp"
+          android:layout_height="30dp"
+          android:layout_weight="1"
+          android:layout_marginRight="15dp"
+          android:layout_marginLeft="10dp"
+          android:text="Save"
+          android:textStyle="bold"
+          android:textColor="@color/white"
+          android:textSize="18sp"
+          android:background="@drawable/btn_background"
+          />
+
+  </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+
